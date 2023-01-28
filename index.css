@@ -1,0 +1,471 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.navbar{
+    position: fixed;
+    z-index: 1000;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    height: 80px;
+    background-color: #fff;
+    padding: 0 20px;
+    box-shadow: 0 15px 40px -20px rgb(40 44 63 / 15%);
+}
+
+.nav{
+    display: flex;
+    margin:0 auto;
+    position: relative;
+    justify-content: space-between;
+    max-width: 1200px;
+    min-width: 1200px;
+    background: #fff;
+    height: 80px;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    display: block;
+    height: 49px;
+    margin-right: 16px;
+    transition-duration: 0.3s;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.location-div{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    font-size: 14px;
+    max-width: 300px;
+    height: 30px;
+    padding-right: 11px;
+    cursor: pointer;
+}
+
+.other{
+    font-weight: 700;
+    color: #3d4152;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #3d4152;
+}
+.other:hover{
+    color: #fc8019;
+    border-bottom: 2px solid #fc8019;
+}
+
+.location{
+    font-weight: 300;
+    margin-left: 5px;
+    padding-left: 5px;
+    color: #686b78;
+}
+
+.arrow-down{
+    margin-left: 7px;
+    color: #fc8019;
+}
+
+.right{
+    position: relative;
+}
+
+.items{
+    display: flex;
+}
+
+.items li{
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #3d4152;
+    margin-right: 36px;
+}
+.nav-item{
+    display: flex;
+    align-items: center;
+    padding-left: 28px;
+    height: 80px;
+    cursor: pointer;
+}
+.nav-item a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #3d4152;
+    font-size: 16px;
+}
+
+.nav-item span{
+    padding-left: 11px;
+}
+
+.items li:last-child a svg{
+    color: greenyellow;
+}
+
+
+/* Main section */
+.content-section{
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 42px;
+    top: 80px;
+    background: #fff;
+    left: 12px;
+}
+
+.item-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+.number{
+    font-weight:700;
+    font-size: 28px;
+    color: #3d4152;
+}
+
+.filters{
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    color: #687b78;
+    font-size: 16px;
+    cursor: pointer;
+}
+.filters div{
+    margin-left: 35px;
+    color: #687b78;
+}
+.relevance:hover{
+    border-bottom: 1px solid #3d4152;
+}
+.rating1:hover{
+    border-bottom: 1px solid #3d4152;
+}
+.delivery-time:hover{
+    border-bottom: 1px solid #3d4152;
+}
+.cost-lh:hover{
+    border-bottom: 1px solid #3d4152;
+}
+.cost-hl:hover{
+    border-bottom: 1px solid #3d4152;
+}
+.restaurant-list{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    margin-bottom: 85px;
+    padding-top: 39px;
+    margin-top: 20px;
+}
+
+.place-link{
+    text-decoration: none;
+    background-color: #fff;
+    color: inherit;
+}
+.list-item{
+    padding: 25px;
+    border: 1px solid #fff;
+}
+
+.list-item:hover{
+    border: 1px solid #d3d5df;
+    box-shadow: 0px 4px 7px 0px rgba(218 220 230 / 60%);
+}
+
+.top-img{
+    background: #eef0f5;
+    width: 254px;
+    height: 160px;
+}
+
+.item-content{
+    position: relative;
+}
+
+.top-img img{
+    opacity: 0.8;
+}
+
+.status{
+    position: absolute;
+    top: 0px;
+    background-color: rgb(58, 60, 65);
+    left: -8px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 5px 9px 4px;
+    text-transform: uppercase;
+    border-color: rgb(30, 32, 35) transparent;
+}
+
+.status::before{
+    position: absolute;
+    bottom: -9px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: inherit;
+    left: 0;
+    border-width: 9px 0 0 9px;
+}
+.place-name-div{
+    margin-top: 14px;
+}
+
+.name{
+    font-size: 17px;
+    font-weight: 500;
+}
+.food-items{
+    color: #686b78;
+    font-size: 13px;
+    margin-top: 4px;
+    font-weight: 300;
+}
+
+.info-div{
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    font-size: 13px;
+    justify-content: space-between;
+    color: #535665;
+    font-weight: 300;
+}
+
+.rating{
+    background: #db7c38;
+    color: #fff;
+    padding: 0 5px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.icon-star{
+    font-size: 10px;
+    margin-right: 5px;
+    position: relative;
+    top: -1px
+}
+
+.rating-green{
+    background: green
+}
+.rating-orange{
+    background-color: #db7c38;
+}
+
+.offer-div{
+    border-top: 1px solid #e9e9eb;
+    padding-top: 14px;
+    margin-top: 14px;
+    color: #8a584b;
+    display: flex;
+    align-items: center;
+}
+
+.icon-offer-filled{
+    font-size: 16px;
+    width: 20px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+.offer-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.place:hover .quick-view{
+    visibility: visible;
+}
+
+.place .quick-view{
+    visibility: hidden;
+    font-size: 13px;
+    border-top: 1px solid #e9e9eb;
+    padding-top: 14px;
+    margin-top: 14px;
+    text-align: center;
+}
+
+.quick-view .view-btn{
+    color: #5d8ed5;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+
+@media screen and (min-width: 1243px) and (max-width: 1270px){
+    .global-nav .nav{
+        min-width: 991px;
+        margin: 0px 21px;
+    }
+    .right .items li{
+        margin-right: 27px;
+    }
+    .container .item-bar .filters{
+        margin-right: 38px;
+    }
+}
+
+@media screen  and (max-width: 1242px){
+    .global-nav .nav{
+        min-width: 1000px;
+        justify-content: center;
+    }
+    .right .items li{
+        margin-right: 29px;
+    }
+    .container .item-bar, .restaurant-list{
+        margin: 0 auto;
+        width: 960px;
+    }
+    .container .item-bar .number{
+        font-size: 25px;
+    }
+
+    .filters div{
+        font-size: 15px;
+    }
+    .item-content .top-img, .top-img img{
+        width: 200px;
+        height: 130px;
+    }
+    .info-div{
+        font-size: 11px;
+    }
+    .offer-div .offer-text{
+        font-size: 12px;
+    }
+    
+}
+
+
+@media screen and (min-width: 382px) and (max-width:480px) {
+      .global-nav .nav{
+        flex-direction: column;
+        height: 160px;
+    }
+     .container .item-bar, .restaurant-list{
+        margin-top: 60px;
+    }
+    .restaurant-list{
+        grid-template-columns: repeat(2,50%);
+    }
+    .item-content .top-img, .top-img img{
+        width: 100%;
+        height: 268px;
+    }
+    .status{
+        font-size: 29px;
+    }
+    .place-name-div {
+       margin-top: 34px;
+    }
+    .place-name-div .name {
+        font-size: 38px;
+    }
+    .place-name-div .food-items{
+        font-size: 31px;
+        margin-top: 25px;
+    }
+
+    .info-div{
+        font-size: 25px;
+        margin-top: 50px;
+    }
+
+    .offer-div .offer-text{
+        font-size: 28px;
+        line-height: 2.2;
+    }
+    .offer-div .icon-offer-filled{     
+        position: relative;
+        top: -9px;
+        margin-right: 18px;
+        font-size: 28px;
+    }
+    
+}
+
+
+/*   footer section    */
+.footer{
+    width: 100%;
+    background-color: black;
+}
+.footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    min-width: 1200px;
+    margin: 0 auto;
+    padding: 76px 0;
+    height: 100%;
+}
+
+.points {
+    color: #808080;
+    font-size: 15px;
+    font-weight: 600;
+    width: 300px;
+    margin: 26px 0px 10px 15px;
+
+}
+.footer-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-li {
+    padding: 20px 10px 2px 0px;
+}
+
+.footer-li a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+}
+.footer-li a:hover {
+        font-weight: 600;
+        font-size: 16px;
+}
+
+.points img {
+    border: 2px solid #808080;
+    padding: 10px;
+    margin: 30px 0px 10px 57px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.points img:hover {
+    transform: scale(1.06);
+    cursor: pointer;
+}
